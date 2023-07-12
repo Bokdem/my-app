@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .App-logo {
@@ -35,4 +37,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+nav {
+  flex: 0 0 10%;
+}
+
+nav img {
+  width: 100px;
+}
+
+.hero {
+  flex: 0 0 90%;
+}
+
+nav,
+.hero {
+  margin: 20px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  margin: 0 10px;
+  background-color:#61dafb;
+}
+
+.card img {
+  border-radius: 12px;
+}
+
+.card--badge {
+  position: absolute;
+  background-color: white;
+  margin: 10px;
+  padding: 4px;
 }
